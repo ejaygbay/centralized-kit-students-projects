@@ -4,31 +4,40 @@ body {
 }
 
 main {
-  background: red;
+  background: #87bfff;
   width: 100%;
   display: grid;
   justify-items: center;
 }
 
 section {
-  background: green;
+  background: whitesmoke;
 }
 
 .card {
   display: grid;
-  background: blue;
   padding: 0px 0px 20px 0px;
 }
 .card-item {
   width: 70%;
   justify-self: center;
-  background: brown;
+  background: whitesmoke;
   margin-top: 20px;
   font-size: 1.5em;
+  border: solid 2px #d9d9d9;
+}
+
+section {
+  display: grid;
+}
+
+#general-project-description {
+  width: 70%;
+  justify-self: center;
 }
 
 .card-head {
-  background: orange;
+  background: #8c8c8c;
   padding: 10px;
 }
 
@@ -41,6 +50,24 @@ section {
   padding: 0px 10px;
 }
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  white-space: nowrap;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #dddddd;
+}
+
 @media screen and (max-width: 480px) {
   body {
     background-color: pink;
@@ -49,7 +76,7 @@ section {
   .card-item {
     width: 90%;
     justify-self: center;
-    background: brown;
+    background: whitesmoke;
     margin-top: 20px;
     font-size: 1.5em;
   }
