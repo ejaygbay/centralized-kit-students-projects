@@ -26,8 +26,14 @@
       <section>
         <div class="card">
           <div class="card-item">
-            <div class="card-head">Week 1</div>
-            <div class="card-body">
+            <div class="card-head">
+              Week 1
+              <i
+                class="card-body1 arrow up expand-collapse-btn"
+                onclick="toggleCardBody(event)"
+              ></i>
+            </div>
+            <div id="card-body1" class="card-body card-open">
               <p id="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 tempore mollitia est deleniti possimus! Quae, explicabo!
@@ -85,8 +91,13 @@
 
         <div class="card">
           <div class="card-item">
-            <div class="card-head">Week 2</div>
-            <div class="card-body">
+            <div class="card-head">
+              Week 2<i
+                class="card-body2 arrow down expand-collapse-btn"
+                onclick="toggleCardBody(event)"
+              ></i>
+            </div>
+            <div id="card-body2" class="card-body card-close">
               <p id="project-description">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
                 tempore mollitia est deleniti possimus! Quae, explicabo!
