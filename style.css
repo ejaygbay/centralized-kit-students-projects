@@ -34,6 +34,8 @@ section {
 #general-project-description {
   width: 70%;
   justify-self: center;
+  font-size: 1.5em;
+  padding: 0px 10px;
 }
 
 .card-head {
@@ -43,11 +45,6 @@ section {
 
 .card-body {
   padding: 0px 10px 10px 10px;
-}
-
-#general-project-description {
-  font-size: 1.5em;
-  padding: 0px 10px;
 }
 
 table {
@@ -99,16 +96,35 @@ tbody tr:nth-child(odd) {
   transform: rotate(-135deg);
 }
 
-@media screen and (max-width: 480px) {
-  body {
-    background-color: pink;
-  }
+p{
+  text-align: justify;
+  word-break: break-all;
+}
 
+.card-head > i{
+  margin-top: 7px;
+}
+
+@media screen and (max-width: 480px) {
   .card-item {
     width: 90%;
     justify-self: center;
     background: whitesmoke;
     margin-top: 20px;
     font-size: 1.5em;
+  }
+
+  #general-project-description {
+    width: 96%;
+    font-size: 1.1em;
+  }
+
+  #project-description {
+    width: 100%;
+    font-size: 0.8em;
+  }
+
+  table, .card-head{
+    font-size: 20px;
   }
 }
