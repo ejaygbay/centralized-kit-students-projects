@@ -1,130 +1,170 @@
 body {
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+header,
+footer {
+    height: 10vh;
+    background: #f69a5c;
 }
 
 main {
-  background: #87bfff;
-  width: 100%;
-  display: grid;
-  justify-items: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+#all-projects {
+    padding-bottom: 74px;
+}
+
+h1 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 section {
-  background: whitesmoke;
+    background: whitesmoke;
 }
 
 .card {
-  display: grid;
-  padding: 0px 0px 20px 0px;
+    display: grid;
+    padding: 0px 0px 20px 0px;
 }
+
 .card-item {
-  width: 70%;
-  justify-self: center;
-  background: whitesmoke;
-  margin-top: 20px;
-  font-size: 1.5em;
-  border: solid 2px #d9d9d9;
-}
-
-section {
-  display: grid;
-}
-
-#general-project-description {
-  width: 70%;
-  justify-self: center;
-  font-size: 1.5em;
-  padding: 0px 10px;
-}
-
-.card-head {
-  background: #8c8c8c;
-  padding: 10px;
-}
-
-.card-body {
-  padding: 0px 10px 10px 10px;
-}
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-td,
-th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-  white-space: nowrap;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: #dddddd;
-}
-
-.expand-collapse-btn {
-  float: right;
-}
-
-.expand-collapse-btn:hover {
-  cursor: pointer;
-}
-
-.card-open {
-  display: block;
-}
-
-.card-close {
-  display: none;
-}
-
-.arrow {
-  border: solid black;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-}
-
-.down {
-  transform: rotate(45deg);
-}
-
-.up {
-  transform: rotate(-135deg);
-}
-
-p{
-  text-align: justify;
-  word-break: break-all;
-}
-
-.card-head > i{
-  margin-top: 7px;
-}
-
-@media screen and (max-width: 480px) {
-  .card-item {
-    width: 90%;
+    width: 70%;
     justify-self: center;
     background: whitesmoke;
     margin-top: 20px;
     font-size: 1.5em;
-  }
-
-  #general-project-description {
-    width: 96%;
-    font-size: 1.1em;
-  }
-
-  #project-description {
-    width: 100%;
-    font-size: 0.8em;
-  }
-
-  table, .card-head{
-    font-size: 20px;
-  }
+    border: solid 2px #d9d9d9;
 }
+
+section {
+    display: grid;
+}
+
+#general-project-description {
+    width: 70%;
+    justify-self: center;
+    font-size: 1.5em;
+    padding: 0px 10px;
+    margin-top: -10px;
+}
+
+.card-head {
+    background: #8c8c8c;
+    padding: 10px;
+}
+
+.card-body {
+    padding: 0px 10px 10px 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    white-space: nowrap;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+.expand-collapse-btn {
+    float: right;
+}
+
+.expand-collapse-btn:hover {
+    cursor: pointer;
+}
+
+.card-open {
+    display: block;
+}
+
+.card-close {
+    display: none;
+}
+
+.arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+}
+
+.up {
+    transform: rotate(-135deg);
+}
+
+p {
+    text-align: justify;
+    word-break: break-all;
+}
+
+.card-head>i {
+    margin-top: 7px;
+}
+
+@media screen and (max-width: 480px) {
+    .card-item {
+        width: 90%;
+        justify-self: center;
+        background: whitesmoke;
+        margin-top: 20px;
+        font-size: 1.5em;
+    }
+    #general-project-description {
+        width: 96%;
+        font-size: 1.1em;
+    }
+    #project-description {
+        width: 100%;
+        font-size: 0.8em;
+    }
+    table,
+    .card-head {
+        font-size: 20px;
+    }
+}
+
+
+/*
+
+
+
+#main{
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: auto;
+}
+
+#content{
+  padding-bottom: 74px;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-items: center;
+}
+
+*/
